@@ -16,7 +16,7 @@ type Telnet struct {
 	timeout time.Duration
 }
 
-// Dial constructs connection to a telnet device. Address string must be in format: "ip:port" (e.g. "127.0.0.0:23").
+// Dial constructs connection to a telnet device. Address string must be in format: "ip:port" (e.g. "127.0.0.1:23").
 // Default timeout is set to 5 seconds.
 func Dial(addr string) (t Telnet, err error) {
 	t.conn, err = net.Dial("tcp", addr)
