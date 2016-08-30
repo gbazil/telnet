@@ -31,7 +31,7 @@ Package telnet provides very simple interface for interacting with telnet device
   		t.Read("$ ")
   		t.Write("ls -l /home\n")
   
-  		s, _ = t.Read("$ ")
+  		s, _ := t.Read("$ ")
   		fmt.Println(s)
   		
   		t.Write("exit\n")
