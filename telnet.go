@@ -1,4 +1,4 @@
-// Package telnet provides very simple interface for interacting with Telnet devices from golang's routines.
+// Package telnet provides very simple interface for interacting with telnet devices from go routines.
 package telnet
 
 import (
@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-// Type Telnet presents struct with net.Conn interface for telnet protocol plus buffered reader and timeout setup
+// Telnet presents struct with net.Conn interface for telnet protocol plus buffered reader and timeout setup
 type Telnet struct {
 	conn    net.Conn
 	reader  *bufio.Reader
