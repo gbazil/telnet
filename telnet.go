@@ -41,7 +41,7 @@ func DialTimeout(addr string, timeout time.Duration) (t Telnet, err error) {
 	return
 }
 
-// Read reads all data to string from telnet device until it meets expected or stops by timeout
+// Read reads all data into string from telnet device until it meets the expected or stops on timeout.
 func (t Telnet) Read(expect string) (str string, err error) {
 	var buf bytes.Buffer
 	t.conn.SetReadDeadline(time.Now().Add(t.timeout))
@@ -68,7 +68,7 @@ func (t Telnet) Read(expect string) (str string, err error) {
 	return
 }
 
-// Write writes string (command or data) to telnet device. Do not forget add LF to end of string
+// Write writes string (command or data) to telnet device. Do not forget add LF to end of string!
 func (t Telnet) Write(s string) (i int, err error) {
 	t.conn.SetWriteDeadline(time.Now().Add(t.timeout))
 	i, err = t.conn.Write([]byte(s))
