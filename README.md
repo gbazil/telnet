@@ -4,4 +4,4 @@
 
 #### Description
 
-Package telnet provides very simple interface for interacting with telnet devices.
+Package telnet provides very simple interface for interacting with telnet devices from golang's routines.
