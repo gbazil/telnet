@@ -13,7 +13,6 @@ Package telnet provides very simple interface for interacting with telnet device
 	import (
 		"fmt"
 		"github.com/gbazil/telnet"
-		"time"
 	)
 
 	func main() {
