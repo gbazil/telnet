@@ -1,6 +1,6 @@
 # telnet
 
-[&copy; Vasily Suvorov 2016](http://bazil.pro)
+[&copy; Vasily Suvorov 2016](https://gbazil.github.io)
 
 #### DESCRIPTION
 
